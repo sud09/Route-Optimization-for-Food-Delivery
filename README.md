@@ -219,6 +219,64 @@ FROM traffic_data_realistic t
 JOIN customerorders c ON t.locationid = c.locationid
 GROUP BY t.trafficdensity;
 ```
+# Delivery Service Analysis (Power BI)
+
+The analysis is based on a delivery platform handling orders from multiple restaurants with a fleet of 50 drivers.
+
+### Key Metrics
+- **Total Orders**: 1,000
+- **Total Restaurants**: 20
+- **Orders Delivered**: 347
+- **Orders Pending**: 653
+- **Average Delivery Hours**: 0.15 hours (9 minutes)
+- **Total Drivers**: 50
+
+### Order Insights
+- **Order Status**:
+  - 65.3% Delivered
+  - 34.7% Pending
+- **Top Drivers** (by Orders Delivered):
+  - Thomas McDonald: 36
+  - Dawn Ferguson: 29
+  - Melody Jenkins: 28
+- **Order Trends**: 
+  - Highest orders on **Tuesday** (181), decreasing to 115 by **Thursday**.
+- **Top Restaurants** (by Orders):
+  - Nguyen-Lopez: 68
+  - Ryan, Alexander and Willis: 67
+
+## Traffic Density Analysis
+- **Average Traffic Density**: 69.85 vehicles per minute
+- **Busiest Hour**: 7 AM
+- **Top Restaurants with Highest Delays**:
+  - Ryan, Alexander and Willis: 10.8 minutes
+  - Nguyen-Lopez: 10.6 minutes
+  - Mcdaniel-Harrington: 9.9 minutes
+
+### Performance Insights
+- **Delivery Performance**: Peaks at **8.0** (2 PM) and drops to **3.3** (9 PM).
+- **Route with Highest Traffic**: Congestion on a mapped route is likely affecting deliveries.
+
+## Driver Attrition Analysis
+- **Average Shift Duration**: 7.06 hours
+- **Max Shift Duration**: 8 hours
+- **Min Shift Duration**: 6 hours
+- **Drivers with Most Shifts**: Dawn Ferguson, Michelle Ballard, Thomas McDonald (8 hours each)
+- **Drivers with Least Shifts**: Charles Carr, Lindsay Pierce (7 hours each)
+- **Drivers with Most Delays**: 
+  - Maria Stephenson: 0.132 hours (~8 minutes)
+  - Andrea Jones: 0.119 hours
+- **Drivers with Least Delays**: 
+  - Cynthia Vasquez: 0.201 hours
+  - Eric Garcia: 0.191 hours
+
+---
+
+## Summary of Insights
+- **High Pending Orders**: 653 orders remain pending, signaling a need for operational adjustments.
+- **Driver Efficiency**: Top drivers are delivering more efficiently, but there is variation in shift length and delays.
+- **Impact of Traffic**: High traffic density and key traffic routes are affecting delivery times.
+- **Order Peaks**: Orders peak on Tuesdays and decrease by the end of the week, suggesting resource reallocation opportunities.
 
 
 
